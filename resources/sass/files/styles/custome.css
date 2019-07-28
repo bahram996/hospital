@@ -1,0 +1,153 @@
+body {
+    direction: rtl!important;
+    font-family: irsans!important;
+}
+/************************** Start fonts styles**************************/
+@font-face {
+    font-family: "irsans";
+    src: url(../fonts/irsans.eot);
+    src: url(../fonts/irsans.eot?#iefix) format("embedded-opentype"), url(../fonts/irsans.woff) format("woff"), url(../fonts/irsans.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0600-U+06FF;  /* For Persian character range */
+}
+@font-face {
+    font-family: "irsans-b";
+    src: url(../fonts/irsans-b.eot);
+    src: url(../fonts/irsans-b.eot?#iefix) format("embedded-opentype"), url(../fonts/irsans-b.woff) format("woff"), url(../fonts/irsans-b.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0600-U+06FF;  /* For Persian character range */
+}
+@font-face {
+    font-family: "irsans-l";
+    src: url(../fonts/irsans-l.eot);
+    src: url(../fonts/irsans-l.eot?#iefix) format("embedded-opentype"), url(../fonts/irsans-l.woff) format("woff"), url(../fonts/irsans-l.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0600-U+06FF;  /* For Persian character range */
+}
+@font-face {
+    font-family: "irsans-m";
+    src: url(../fonts/irsans-m.eot);
+    src: url(../fonts/irsans-m.eot?#iefix) format("embedded-opentype"), url(../fonts/irsans-m.woff) format("woff"), url(../fonts/irsans-m.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0600-U+06FF;  /* For Persian character range */
+}
+@font-face {
+    font-family: "irsans-u";
+    src: url(../fonts/irsans-u.eot);
+    src: url(../fonts/irsans-u.eot?#iefix) format("embedded-opentype"), url(../fonts/irsans-u.woff) format("woff"), url(../fonts/irsans-u.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0600-U+06FF;  /* For Persian character range */
+}
+/************************** Start fonts styles**************************/
+
+header {
+    position: relative;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #00aabf;
+    z-index: 10;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.4);
+}
+header .textLogo {
+    position: relative;
+    display: block;
+    width: 8em;
+    height: 100%;
+    background: rgba(0,0,0,0.15);
+    margin: 0 auto;
+    opacity: 1;
+    padding: 0 7em;
+    transition: padding .5s;
+}
+
+header .textLogo:before {
+    border-width: 75px 15px 25px 0;
+    border-right-color: transparent;
+    right: -15px;
+}
+header .textLogo:after {
+    border-width: 25px 0 75px 15px;
+    left: -15px;
+    border-left-color: transparent;
+}
+.textLogo:before,
+.textLogo:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 0 solid rgba(0,0,0,0.15);
+    border-width: 50px 7.5px;
+}
+header .textLogo img {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.8em;
+    fill: #efefef;
+    stroke: none;
+    transition: transform .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+header .smallLogo {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    transition: all .5s;
+}
+header .smallLogo a {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    position: relative;
+    display: block;
+    top: 0;
+    fill: #d2d2d2;
+}
+header .smallLogo a img {
+    width: 100%;
+    height: 100%;
+}
+/************************** End header styles*************************/
+/************************** Start main styles**************************/
+.main {
+    margin-top: 15px;
+}
+.main .content {
+    position: relative;
+    float: right;
+}
+.content > .texts {
+    padding: 2em;
+}
+.content > .texts > h1 {
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+.content > .texts > h1:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    position: absolute;
+    right: 23px;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 20px 10px 0;
+    border-color: transparent #ff4342 transparent transparent;
+}
+/************************** End main styles**************************/
